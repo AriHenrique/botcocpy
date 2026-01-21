@@ -2,8 +2,10 @@ import time
 from android import AndroidDevice
 from config import GAME_PACKAGE
 from functions.bluestacks_control import configure_bluestacks, start_bluestacks, kill_bluestacks, adb_validate
-from functions.donate import donate_castle
+from functions.donate import donate_castle, request_castle
 from functions.delete_army import *
+from functions.create_army import create_army
+
 
 # ================= SETUP =================
 def setup_bluestacks():
@@ -29,7 +31,7 @@ def init_game(device):
     time.sleep(0.3)
 
     # Centraliza: move tudo para esquerda, depois move X pixels para direita
-    device.center_view(move_right=100)  # Ajuste este valor para centralizar
+    device.center_view(move_right=100, move_down=-50)  # Ajuste este valor para centralizar
     print("[BOT] Ready")
 
 # ================= MAIN =================
@@ -40,7 +42,15 @@ if __name__ == "__main__":
 
         d = AndroidDevice()
         # init_game(d)
-        d.center_view(move_right=100, move_down=-50)
+        # d.center_view(move_right=100, move_down=-50)
+        # request_castle(d)
+        d.find_and_tap_with_scroll(
+            template="troops/corredor.png",
+            scroll_pixels=150,
+            scroll_pos=(500, 580),  # Posição para arrastar
+            max_scrolls=5
+        )
+
         # ================= FLOW =================
         # Adicione seu fluxo aqui
         # delete_army(d, castel_delete=True)

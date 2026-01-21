@@ -375,5 +375,707 @@
       732
     ],
     "use_region": true
+  },
+  "send_troops.png": {
+    "region": [
+      502,
+      459,
+      587,
+      501
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bb.png": {
+    "region": [
+      38,
+      550,
+      81,
+      575
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "arq.png": {
+    "region": [
+      39,
+      651,
+      78,
+      670
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "gg.png": {
+    "region": [
+      117,
+      548,
+      159,
+      571
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "gob.png": {
+    "region": [
+      128,
+      644,
+      166,
+      665
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bomb.png": {
+    "region": [
+      226,
+      547,
+      251,
+      592
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "balao.png": {
+    "region": [
+      214,
+      643,
+      248,
+      672
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "mago.png": {
+    "region": [
+      315,
+      545,
+      344,
+      599
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "curadoura.png": {
+    "region": [
+      314,
+      639,
+      336,
+      684
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "dragao.png": {
+    "region": [
+      400,
+      545,
+      423,
+      596
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "peka.png": {
+    "region": [
+      405,
+      637,
+      425,
+      681
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bbdragao.png": {
+    "region": [
+      490,
+      549,
+      517,
+      595
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "mineiro.png": {
+    "region": [
+      538,
+      670,
+      488,
+      652
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "dgeletrico.png": {
+    "region": [
+      575,
+      545,
+      596,
+      597
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "yeti.png": {
+    "region": [
+      573,
+      639,
+      598,
+      687
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "dgdirigivel.png": {
+    "region": [
+      711,
+      596,
+      668,
+      570
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "template_16.png": {
+    "region": [
+      644,
+      637,
+      692,
+      664
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "hera.png": {
+    "region": [
+      754,
+      545,
+      774,
+      596
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "ciclope.png": {
+    "region": [
+      748,
+      634,
+      779,
+      667
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "golem_meteoro.png": {
+    "region": [
+      93,
+      547,
+      116,
+      594
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "servo.png": {
+    "region": [
+      90,
+      636,
+      115,
+      686
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "corredor.png": {
+    "region": [
+      336,
+      551,
+      385,
+      575
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "valk.png": {
+    "region": [
+      176,
+      637,
+      202,
+      675
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "golem.png": {
+    "region": [
+      262,
+      545,
+      287,
+      594
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bruxa.png": {
+    "region": [
+      261,
+      637,
+      293,
+      688
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "lava.png": {
+    "region": [
+      349,
+      545,
+      375,
+      596
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "lancador.png": {
+    "region": [
+      357,
+      634,
+      378,
+      674
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "golem_gelo.png": {
+    "region": [
+      436,
+      545,
+      468,
+      598
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "cacadora.png": {
+    "region": [
+      438,
+      636,
+      461,
+      684
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "mini_guardiao.png": {
+    "region": [
+      529,
+      545,
+      553,
+      593
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "druida.png": {
+    "region": [
+      527,
+      638,
+      559,
+      686
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "fornalha.png": {
+    "region": [
+      615,
+      544,
+      641,
+      595
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_barbaro.png": {
+    "region": [
+      618,
+      637,
+      644,
+      685
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_arqueira.png": {
+    "region": [
+      699,
+      546,
+      729,
+      596
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_gigante.png": {
+    "region": [
+      701,
+      639,
+      733,
+      685
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_goblin.png": {
+    "region": [
+      786,
+      544,
+      814,
+      596
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_quebrador.png": {
+    "region": [
+      774,
+      637,
+      820,
+      667
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_balao.png": {
+    "region": [
+      333,
+      546,
+      383,
+      574
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_mago.png": {
+    "region": [
+      334,
+      638,
+      378,
+      669
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_dragao.png": {
+    "region": [
+      417,
+      545,
+      462,
+      577
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bb_infernal.png": {
+    "region": [
+      418,
+      637,
+      467,
+      666
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_mineiro.png": {
+    "region": [
+      505,
+      544,
+      554,
+      576
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_yeti.png": {
+    "region": [
+      505,
+      636,
+      554,
+      665
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_servo.png": {
+    "region": [
+      611,
+      545,
+      644,
+      593
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_corredor.png": {
+    "region": [
+      607,
+      635,
+      646,
+      687
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_valk.png": {
+    "region": [
+      693,
+      545,
+      750,
+      578
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_bruxa.png": {
+    "region": [
+      679,
+      633,
+      752,
+      665
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_lava.png": {
+    "region": [
+      767,
+      544,
+      836,
+      574
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "s_lancador.png": {
+    "region": [
+      767,
+      636,
+      837,
+      666
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "open_troops_create.png": {
+    "region": [
+      554,
+      282,
+      628,
+      309
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "open_spells_create.png": {
+    "region": [
+      466,
+      392,
+      545,
+      414
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "open_machine_create.png": {
+    "region": [
+      693,
+      391,
+      761,
+      412
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "open_castle_create.png": {
+    "region": [
+      480,
+      505,
+      544,
+      529
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "scroll_horizontal.png": {
+    "region": [
+      814,
+      620,
+      845,
+      626
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
   }
 }

@@ -1,0 +1,8 @@
+{
+    "troops": [
+        {"name": "gg", "quantity": 2},
+        {"name": "corredor", "quantity": 2}
+    ],
+    "spells": [],
+    "notes": "Edite este arquivo para configurar seu exército. Use os nomes dos arquivos PNG sem a extensão."
+}

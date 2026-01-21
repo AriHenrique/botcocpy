@@ -138,6 +138,60 @@ class AndroidDevice:
 
         print(f"[ADB] View centered (moved {move_right}px right, {move_down}px down)")
 
+    def scroll_horizontal(self, scroll_pixels, start_pos=None, hold_ms=50):
+        """
+        Arrasta horizontalmente a partir de uma posição na tela.
+
+        Args:
+            scroll_pixels: pixels para arrastar (positivo = direita para esquerda)
+            start_pos: tupla (x, y) da posição inicial. Se None, usa centro da tela.
+            hold_ms: tempo de hold do swipe (maior = mais lento, evita ser interpretado como clique)
+        """
+        screen_w, screen_h = self._get_screen_size()
+
+        if start_pos:
+            x, y = start_pos
+        else:
+            x = screen_w // 2
+            y = screen_h // 2
+
+        self._minitouch_swipe(x, y, x - scroll_pixels, y, hold_ms=hold_ms)
+        print(f"[ADB] Scrolled {scroll_pixels}px left from ({x}, {y})")
+
+    def find_and_tap_with_scroll(self, template, scroll_pixels=150, scroll_pos=None,
+                                  max_scrolls=5, threshold=0.75, scroll_hold_ms=50):
+        """
+        Procura uma imagem na tela, se não encontrar faz scroll horizontal e tenta novamente.
+
+        Args:
+            template: imagem para encontrar e clicar
+            scroll_pixels: pixels para arrastar a cada tentativa
+            scroll_pos: tupla (x, y) da posição para fazer scroll. Se None, usa centro da tela.
+            max_scrolls: número máximo de scrolls antes de desistir
+            threshold: limiar de detecção
+            scroll_hold_ms: tempo de hold do scroll
+
+        Returns:
+            True se encontrou e clicou, False caso contrário
+        """
+        template_path = os.path.join(TEMPLATE_DIR, template)
+
+        for attempt in range(max_scrolls + 1):
+            self.screenshot()
+            pos = find_template(SCREENSHOT_FILE, template_path, threshold)
+
+            if pos:
+                self.tap(pos[0], pos[1])
+                return True
+
+            if attempt < max_scrolls:
+                print(f"[ADB] {template} not found, scrolling... ({attempt + 1}/{max_scrolls})")
+                self.scroll_horizontal(scroll_pixels, scroll_pos, hold_ms=scroll_hold_ms)
+                time.sleep(5)
+
+        print(f"[ADB] {template} not found after {max_scrolls} scrolls")
+        return False
+
     def type(self, text):
         safe = text.replace(" ", "%s")
         print(f"[ADB] Type: {text}")
