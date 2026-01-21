@@ -1,0 +1,379 @@
+{
+  "delete_trops.png": {
+    "region": [
+      783,
+      240,
+      801,
+      258
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "delete_spells.png": {
+    "region": [
+      627,
+      346,
+      643,
+      369
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "delete_machines.png": {
+    "region": [
+      782,
+      347,
+      804,
+      369
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "template_4.png": {
+    "region": [
+      1209,
+      651,
+      1234,
+      685
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": true
+  },
+  "collect_elixir.png": {
+    "region": [
+      494,
+      573,
+      525,
+      602
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": false
+  },
+  "collect_gold.png": {
+    "region": [
+      340,
+      241,
+      371,
+      271
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": false
+  },
+  "collect_dark.png": {
+    "region": [
+      1247,
+      317,
+      1279,
+      348
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": false
+  },
+  "ok_bt.png": {
+    "region": [
+      902,
+      554,
+      1040,
+      612
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": true
+  },
+  "cancel_bt.png": {
+    "region": [
+      544,
+      555,
+      700,
+      604
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": true
+  },
+  "bt_atk.png": {
+    "region": [
+      21,
+      624,
+      99,
+      713
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_army.png": {
+    "region": [
+      19,
+      567,
+      60,
+      604
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_chat.png": {
+    "region": [
+      22,
+      323,
+      57,
+      354
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_config.png": {
+    "region": [
+      802,
+      564,
+      839,
+      604
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "close_bt.png": {
+    "region": [
+      1268,
+      77,
+      1307,
+      123
+    ],
+    "screen_size": [
+      1600,
+      900
+    ],
+    "use_region": false
+  },
+  "bt_ok.png": {
+    "region": [
+      492,
+      427,
+      583,
+      460
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_cancel.png": {
+    "region": [
+      278,
+      427,
+      391,
+      462
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "delete_castle.png": {
+    "region": [
+      626,
+      464,
+      645,
+      483
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "request_castle.png": {
+    "region": [
+      750,
+      480,
+      794,
+      515
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "donate_castle.png": {
+    "region": [
+      253,
+      622,
+      319,
+      647
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "select_troop_donate.png": {
+    "region": [
+      340,
+      391,
+      352,
+      401
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "select_spell_donate.png": {
+    "region": [
+      342,
+      599,
+      352,
+      606
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "device_connect.png": {
+    "region": [
+      229,
+      312,
+      540,
+      363
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "reload_device.png": {
+    "region": [
+      220,
+      403,
+      300,
+      428
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "select_super_troop_donate.png": {
+    "region": [
+      474,
+      475,
+      487,
+      490
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "select_troop_donate_1.png": {
+    "region": [
+      483,
+      394,
+      519,
+      401
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "select_super_troop_donate_1.png": {
+    "region": [
+      349,
+      481,
+      388,
+      490
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "select_spell_donate_1.png": {
+    "region": [
+      354,
+      604,
+      386,
+      609
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bt_close_chat.png": {
+    "region": [
+      369,
+      300,
+      416,
+      385
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "menubt_army.png": {
+    "region": [
+      19,
+      563,
+      56,
+      602
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  }
+}

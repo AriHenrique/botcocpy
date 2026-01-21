@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bot-coc"
+version = "0.1.0"
+description = ""
+authors = ["AriHenrique <arihenriquedev@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.13.0.90"
+pillow = "^12.1.0"
+numpy = "^2.4.1"
+pytesseract = "^0.3.13"
+pywin32 = "^311"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
