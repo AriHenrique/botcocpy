@@ -6,13 +6,15 @@ authors = ["AriHenrique <arihenriquedev@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.14"
 opencv-python = "^4.13.0.90"
 pillow = "^12.1.0"
 numpy = "^2.4.1"
 pytesseract = "^0.3.13"
 pywin32 = "^311"
 
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,0 +1,116 @@
+{
+  "gui": {
+    "title": "Bot COC - Control Panel",
+    "tabs": {
+      "control": "Control",
+      "settings": "Settings",
+      "army": "Army",
+      "log": "Log"
+    },
+    "buttons": {
+      "kill_bluestacks": "Kill BlueStacks",
+      "configure_bluestacks": "Configure BlueStacks",
+      "start_bluestacks": "Start BlueStacks",
+      "validate_adb": "Validate ADB",
+      "connect_device": "Connect Device",
+      "screenshot": "Screenshot",
+      "init_game": "Init Game",
+      "center_view": "Center View",
+      "delete_army": "Delete Army",
+      "create_army": "Create Army",
+      "train_army": "Train Army",
+      "donate_castle": "Donate Castle",
+      "request_castle": "Request Castle",
+      "clear_log": "Clear Log",
+      "save_settings": "Save Settings",
+      "refresh_list": "Refresh List",
+      "add_selected": "Add Selected",
+      "remove_selected": "Remove Selected",
+      "update_quantity": "Update Quantity",
+      "save_army_config": "Save Army Config",
+      "load_army_config": "Load Army Config"
+    },
+    "labels": {
+      "blue_stacks_control": "BlueStacks Control",
+      "device_connection": "Device Connection",
+      "game_actions": "Game Actions",
+      "bot_functions": "Bot Functions",
+      "adb_settings": "ADB Settings",
+      "game_settings": "Game Settings",
+      "view_settings": "View Settings",
+      "available_troops": "Available Troops",
+      "army_configuration": "Army Configuration",
+      "adb_path": "ADB Path:",
+      "host": "Host:",
+      "port": "Port:",
+      "game_package": "Game Package:",
+      "move_right": "Move Right:",
+      "move_down": "Move Down:",
+      "quantity": "Quantity:",
+      "troop": "Troop",
+      "quantity_col": "Quantity"
+    },
+    "messages": {
+      "warning": "Warning",
+      "error": "Error",
+      "success": "Success",
+      "another_operation_running": "Another operation is already running!",
+      "please_connect_device": "Please connect device first!",
+      "please_select_troop": "Please select a troop!",
+      "please_select_troop_to_remove": "Please select a troop to remove!",
+      "please_select_troop_to_update": "Please select a troop to update!",
+      "invalid_quantity": "Invalid quantity!",
+      "troop_already_in_army": "{} is already in army!",
+      "army_config_saved": "Army configuration saved!",
+      "settings_saved": "Settings saved (GUI only)"
+    }
+  },
+  "logs": {
+    "bs": {
+      "killing": "Killing BlueStacks...",
+      "killed": "BlueStacks killed",
+      "configuring": "Configuring BlueStacks...",
+      "configured": "BlueStacks configured",
+      "starting": "Starting BlueStacks...",
+      "started": "BlueStacks started"
+    },
+    "adb": {
+      "validating": "Validating connection...",
+      "validation_complete": "Validation complete"
+    },
+    "device": {
+      "connecting": "Connecting...",
+      "connected": "Connected to {}:{}",
+      "taking_screenshot": "Taking screenshot...",
+      "screenshot_saved": "Screenshot saved to screen.png"
+    },
+    "game": {
+      "initializing": "Initializing game...",
+      "waiting_for_load": "Waiting for game to load...",
+      "zooming_out": "Zooming out...",
+      "initialized": "Game initialized",
+      "centering_view": "Centering view (right={}, down={})...",
+      "view_centered": "View centered"
+    },
+    "bot": {
+      "deleting_army": "Deleting army...",
+      "army_deleted": "Army deleted",
+      "creating_army": "Creating army...",
+      "army_created": "Army created",
+      "training_army": "Training army...",
+      "army_trained": "Army trained",
+      "donating_castle": "Donating to castle...",
+      "donation_complete": "Donation complete",
+      "requesting_castle": "Requesting from castle...",
+      "request_complete": "Request complete"
+    },
+    "army": {
+      "loaded_troops": "Loaded {} available troops",
+      "added_troop": "Added {}x {}",
+      "removed_troop": "Removed {}",
+      "updated_quantity": "Updated {} quantity to {}",
+      "saved_config": "Saved army configuration with {} troop types",
+      "loaded_config": "Loaded army configuration with {} troop types"
+    }
+  }
+}

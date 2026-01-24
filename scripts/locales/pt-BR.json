@@ -1,0 +1,116 @@
+{
+  "gui": {
+    "title": "Bot COC - Painel de Controle",
+    "tabs": {
+      "control": "Controle",
+      "settings": "Configurações",
+      "army": "Exército",
+      "log": "Log"
+    },
+    "buttons": {
+      "kill_bluestacks": "Encerrar BlueStacks",
+      "configure_bluestacks": "Configurar BlueStacks",
+      "start_bluestacks": "Iniciar BlueStacks",
+      "validate_adb": "Validar ADB",
+      "connect_device": "Conectar Dispositivo",
+      "screenshot": "Capturar Tela",
+      "init_game": "Inicializar Jogo",
+      "center_view": "Centralizar Visualização",
+      "delete_army": "Deletar Exército",
+      "create_army": "Criar Exército",
+      "train_army": "Treinar Exército",
+      "donate_castle": "Doar para Castelo",
+      "request_castle": "Solicitar do Castelo",
+      "clear_log": "Limpar Log",
+      "save_settings": "Salvar Configurações",
+      "refresh_list": "Atualizar Lista",
+      "add_selected": "Adicionar Selecionado",
+      "remove_selected": "Remover Selecionado",
+      "update_quantity": "Atualizar Quantidade",
+      "save_army_config": "Salvar Config. Exército",
+      "load_army_config": "Carregar Config. Exército"
+    },
+    "labels": {
+      "blue_stacks_control": "Controle BlueStacks",
+      "device_connection": "Conexão do Dispositivo",
+      "game_actions": "Ações do Jogo",
+      "bot_functions": "Funções do Bot",
+      "adb_settings": "Configurações ADB",
+      "game_settings": "Configurações do Jogo",
+      "view_settings": "Configurações de Visualização",
+      "available_troops": "Tropas Disponíveis",
+      "army_configuration": "Configuração do Exército",
+      "adb_path": "Caminho ADB:",
+      "host": "Host:",
+      "port": "Porta:",
+      "game_package": "Pacote do Jogo:",
+      "move_right": "Mover Direita:",
+      "move_down": "Mover Baixo:",
+      "quantity": "Quantidade:",
+      "troop": "Tropa",
+      "quantity_col": "Quantidade"
+    },
+    "messages": {
+      "warning": "Aviso",
+      "error": "Erro",
+      "success": "Sucesso",
+      "another_operation_running": "Outra operação já está em execução!",
+      "please_connect_device": "Por favor, conecte o dispositivo primeiro!",
+      "please_select_troop": "Por favor, selecione uma tropa!",
+      "please_select_troop_to_remove": "Por favor, selecione uma tropa para remover!",
+      "please_select_troop_to_update": "Por favor, selecione uma tropa para atualizar!",
+      "invalid_quantity": "Quantidade inválida!",
+      "troop_already_in_army": "{} já está no exército!",
+      "army_config_saved": "Configuração do exército salva!",
+      "settings_saved": "Configurações salvas (apenas GUI)"
+    }
+  },
+  "logs": {
+    "bs": {
+      "killing": "Encerrando BlueStacks...",
+      "killed": "BlueStacks encerrado",
+      "configuring": "Configurando BlueStacks...",
+      "configured": "BlueStacks configurado",
+      "starting": "Iniciando BlueStacks...",
+      "started": "BlueStacks iniciado"
+    },
+    "adb": {
+      "validating": "Validando conexão...",
+      "validation_complete": "Validação completa"
+    },
+    "device": {
+      "connecting": "Conectando...",
+      "connected": "Conectado a {}:{}",
+      "taking_screenshot": "Capturando tela...",
+      "screenshot_saved": "Captura de tela salva em screen.png"
+    },
+    "game": {
+      "initializing": "Inicializando jogo...",
+      "waiting_for_load": "Aguardando jogo carregar...",
+      "zooming_out": "Fazendo zoom out...",
+      "initialized": "Jogo inicializado",
+      "centering_view": "Centralizando visualização (right={}, down={})...",
+      "view_centered": "Visualização centralizada"
+    },
+    "bot": {
+      "deleting_army": "Deletando exército...",
+      "army_deleted": "Exército deletado",
+      "creating_army": "Criando exército...",
+      "army_created": "Exército criado",
+      "training_army": "Treinando exército...",
+      "army_trained": "Exército treinado",
+      "donating_castle": "Doando para castelo...",
+      "donation_complete": "Doação completa",
+      "requesting_castle": "Solicitando do castelo...",
+      "request_complete": "Solicitação completa"
+    },
+    "army": {
+      "loaded_troops": "Carregadas {} tropas disponíveis",
+      "added_troop": "Adicionado {}x {}",
+      "removed_troop": "Removido {}",
+      "updated_quantity": "Atualizado {} quantidade para {}",
+      "saved_config": "Salva configuração do exército com {} tipos de tropas",
+      "loaded_config": "Carregada configuração do exército com {} tipos de tropas"
+    }
+  }
+}

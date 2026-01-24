@@ -1,4 +1,4 @@
-from android import AndroidDevice
+from compat.android import AndroidDevice
 
 
 def open_army(game_device: AndroidDevice):

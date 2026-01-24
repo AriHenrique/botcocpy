@@ -1,7 +1,15 @@
 import os
 import re
 import subprocess
+import sys
 import time
+from compat.logger import get_bs_logger, get_adb_logger
+
+# Helper to hide CMD windows on Windows
+if sys.platform == 'win32':
+    _subprocess_flags = {'creationflags': subprocess.CREATE_NO_WINDOW}
+else:
+    _subprocess_flags = {}
 
 # =========================
 # CONFIG
@@ -22,10 +30,13 @@ SHOW_SIDEBAR = "0"
 # UTILS
 # =========================
 
+logger = get_bs_logger(__name__)
+adb_logger = get_adb_logger(__name__)
+
 def run(cmd, silent=False):
     if not silent:
-        print(">", " ".join(cmd))
-    return subprocess.run(cmd, capture_output=True, text=True)
+        logger.debug(f"Running command: {' '.join(cmd)}")
+    return subprocess.run(cmd, capture_output=True, text=True, **_subprocess_flags)
 
 
 # =========================
@@ -33,12 +44,13 @@ def run(cmd, silent=False):
 # =========================
 
 def kill_bluestacks():
-    print("[BS] Killing BlueStacks...")
+    logger.info("Killing BlueStacks...")
     for proc in ["HD-Player.exe", "HD-Service.exe", "HD-Frontend.exe"]:
         subprocess.run(
             ["taskkill", "/F", "/IM", proc],
             stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
+            stderr=subprocess.DEVNULL,
+            **_subprocess_flags
         )
 
 
@@ -82,7 +94,7 @@ def configure_bluestacks():
     if not os.path.exists(BLUESTACKS_CONF):
         raise RuntimeError("bluestacks.conf not found")
 
-    print("[BS] Reading config...")
+    logger.info("Reading config...")
     with open(BLUESTACKS_CONF, "r", encoding="utf-8", errors="ignore") as f:
         lines = f.readlines()
 
@@ -90,9 +102,10 @@ def configure_bluestacks():
     instance = detect_instance(text)
 
     if not instance:
+        logger.error("Could not detect BlueStacks instance")
         raise RuntimeError("Could not detect BlueStacks instance")
 
-    print(f"[BS] Detected instance: {instance}")
+    logger.info(f"Detected instance: {instance}")
 
     settings = {
         "fb_width": TARGET_WIDTH,
@@ -106,28 +119,29 @@ def configure_bluestacks():
     for key, value in settings.items():
         lines = set_key(lines, instance, key, value)
 
-    print("[BS] Writing config...")
+    logger.info("Writing config...")
     with open(BLUESTACKS_CONF, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
-    print("[BS] Config applied successfully")
+    logger.info("Config applied successfully")
 
 
 def start_bluestacks():
-    print("[BS] Starting BlueStacks...")
+    logger.info("Starting BlueStacks...")
     subprocess.Popen([BLUESTACKS_EXE])
     time.sleep(15)
+    logger.info("BlueStacks started")
 
 
 def adb_validate():
-    print("[ADB] Connecting...")
+    adb_logger.info("Connecting...")
     run([ADB, "connect", DEVICE], silent=True)
 
     size = run([ADB, "-s", DEVICE, "shell", "wm", "size"], silent=True)
     dpi = run([ADB, "-s", DEVICE, "shell", "wm", "density"], silent=True)
 
-    print("[ADB] Screen:", size.stdout.strip())
-    print("[ADB] Density:", dpi.stdout.strip())
+    adb_logger.info(f"Screen: {size.stdout.strip()}")
+    adb_logger.info(f"Density: {dpi.stdout.strip()}")
 
 
 # =========================
@@ -135,7 +149,7 @@ def adb_validate():
 # =========================
 
 def main():
-    print("=== BLUESTACKS RESOLUTION CONTROLLER ===")
+    logger.info("=== BLUESTACKS RESOLUTION CONTROLLER ===")
 
     kill_bluestacks()
     time.sleep(2)
@@ -144,4 +158,4 @@ def main():
     start_bluestacks()
     adb_validate()
 
-    print("=== DONE ===")
+    logger.info("=== DONE ===")

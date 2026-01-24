@@ -1,8 +1,10 @@
 import json
 import os
 import time
+from compat.logger import get_army_logger
 
 ARMY_CONFIG = os.path.join(os.path.dirname(__file__), "..", "config", "army.json")
+logger = get_army_logger(__name__)
 
 
 def load_army_config():
@@ -33,17 +35,17 @@ def create_army(device, open_menu=True):
     troops = config.get("troops", [])
 
     if not troops:
-        print("[ARMY] No troops configured in army.json")
+        logger.warning("No troops configured in army.json")
         return
 
-    print(f"[ARMY] Creating army with {len(troops)} troop types...")
+    logger.info(f"Creating army with {len(troops)} troop types...")
 
     if open_menu:
         # Abre menu do exército
         device.tap_image("menu/bt_army.png", threshold=0.8)
         time.sleep(1)
-        device.tap_image("menu/open_troops_create.png", threshold=0.8)
-        time.sleep(1)
+    device.tap_image("menu/open_troops_create.png", threshold=0.8)
+    time.sleep(1)
     # Posição para fazer scroll (baseado nas regiões do templates.json)
     # Área das tropas: Y entre 544-690, centro em ~617
     scroll_pos = (750, 617)  # Lado direito da área das tropas
@@ -57,7 +59,7 @@ def create_army(device, open_menu=True):
 
         template = f"troops/{name}.png"
 
-        print(f"[ARMY] Adding {quantity}x {name}")
+        logger.info(f"Adding {quantity}x {name}")
 
         for i in range(quantity):
             # Tenta encontrar e clicar, com scroll se necessário
@@ -70,12 +72,12 @@ def create_army(device, open_menu=True):
             )
 
             if not found:
-                print(f"[ARMY] Could not find {name}, skipping...")
+                logger.warning(f"Could not find {name}, skipping...")
                 break
 
             time.sleep(0.1)
 
-    print("[ARMY] Army creation complete")
+    logger.info("Army creation complete")
 
 
 def train_army(device):
@@ -84,11 +86,11 @@ def train_army(device):
     """
     from functions.delete_army import delete_army
 
-    print("[ARMY] Training new army...")
+    logger.info("Training new army...")
 
     # Deleta exército atual
-    delete_army(device, castel_delete=False)
-    time.sleep(0.5)
+    delete_army(device, castel_delete=False, open_menu=False)
+    time.sleep(1)
 
     # Cria novo exército
     create_army(device, open_menu=False)
@@ -96,4 +98,4 @@ def train_army(device):
     # Fecha menu
     device.tap_image("menu/bt_close.png", threshold=0.8)
 
-    print("[ARMY] Training complete")
+    logger.info("Training complete")

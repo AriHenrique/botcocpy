@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 shell getprop ro.build.version.sdk)",
+      "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 shell getprop ro.product.cpu.abi)",
+      "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 push \"C:\\\\Users\\\\arihe\\\\developer\\\\bot_coc\\\\adb.scripts\\\\minitouch\" /data/local/tmp/minitouch)",
+      "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 shell \"mkdir -p /data/local/tmp\")",
+      "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 push \"adb.scripts\\\\minitouch\" \"/data/local/tmp/minitouch\")",
+      "Bash(cmd /c \"C:\\\\android\\\\platform-tools\\\\adb.exe -s 127.0.0.1:5556 push adb.scripts\\\\minitouch /data/local/tmp/minitouch\")",
+      "Bash(MSYS_NO_PATHCONV=1 \"C:\\\\android\\\\platform-tools\\\\adb.exe\":*)",
+      "Bash(python:*)"
+    ]
+  }
+}

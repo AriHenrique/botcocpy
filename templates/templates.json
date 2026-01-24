@@ -1,5 +1,5 @@
 {
-  "delete_trops.png": {
+  "delete_troop.png": {
     "region": [
       783,
       240,
@@ -12,7 +12,7 @@
     ],
     "use_region": true
   },
-  "delete_spells.png": {
+  "delete_spell.png": {
     "region": [
       627,
       346,
@@ -25,7 +25,7 @@
     ],
     "use_region": true
   },
-  "delete_machines.png": {
+  "delete_machine.png": {
     "region": [
       782,
       347,
@@ -1071,6 +1071,58 @@
       620,
       845,
       626
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "empty_troop.png": {
+    "region": [
+      785,
+      243,
+      799,
+      256
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "empty_spell.png": {
+    "region": [
+      628,
+      350,
+      643,
+      364
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "empty_machine.png": {
+    "region": [
+      782,
+      349,
+      799,
+      365
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "empty_castle.png": {
+    "region": [
+      627,
+      464,
+      642,
+      480
     ],
     "screen_size": [
       860,

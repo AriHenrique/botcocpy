@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+logs/
+*.log
+
+# Screenshots
+screen.png
+ui.xml
+
+# Scripts temporários
+swipe_script.txt
+zoom_script.txt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build_exe/
+dist/
+build/*.spec
+# build_exe.spec is versioned (important config file in root)
+# Ignore other .spec files but keep build_exe.spec
+*.spec
+!build_exe.spec
+
+# Resources (binários grandes - não versionar)
+# bot_coc/resources/adb/adb.exe
+# bot_coc/resources/adb/*.dll
+# bot_coc/resources/adb_scripts/*.minitouch
