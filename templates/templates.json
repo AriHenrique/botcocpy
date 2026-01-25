@@ -1129,5 +1129,135 @@
       732
     ],
     "use_region": true
+  },
+  "army_open_true.png": {
+    "region": [
+      651,
+      520,
+      805,
+      556
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "more_settings.png": {
+    "region": [
+      341,
+      578,
+      510,
+      626
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "ajust_bar_size.png": {
+    "region": [
+      591,
+      445,
+      754,
+      483
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bt_bar_size.png": {
+    "region": [
+      386,
+      460,
+      427,
+      502
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "bt_bar_size_no_two_rows.png": {
+    "region": [
+      601,
+      536,
+      725,
+      588
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_language.png": {
+    "region": [
+      385,
+      380,
+      406,
+      422
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_english.png": {
+    "region": [
+      122,
+      165,
+      202,
+      191
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": false
+  },
+  "english_ok.png": {
+    "region": [
+      275,
+      351,
+      373,
+      433
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "drag_language.png": {
+    "region": [
+      785,
+      138,
+      811,
+      217
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
+  },
+  "bt_ok_all.png": {
+    "region": [
+      598,
+      402,
+      625,
+      440
+    ],
+    "screen_size": [
+      860,
+      732
+    ],
+    "use_region": true
   }
 }

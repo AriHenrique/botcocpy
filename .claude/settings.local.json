@@ -9,7 +9,13 @@
       "Bash(\"C:\\\\android\\\\platform-tools\\\\adb.exe\" -s 127.0.0.1:5556 push \"adb.scripts\\\\minitouch\" \"/data/local/tmp/minitouch\")",
       "Bash(cmd /c \"C:\\\\android\\\\platform-tools\\\\adb.exe -s 127.0.0.1:5556 push adb.scripts\\\\minitouch /data/local/tmp/minitouch\")",
       "Bash(MSYS_NO_PATHCONV=1 \"C:\\\\android\\\\platform-tools\\\\adb.exe\":*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(poetry run python:*)",
+      "Bash(poetry add:*)",
+      "Bash(poetry run black:*)",
+      "Bash(poetry run ruff check:*)",
+      "Bash(poetry run pytest:*)",
+      "Bash(make clean:*)"
     ]
   }
 }

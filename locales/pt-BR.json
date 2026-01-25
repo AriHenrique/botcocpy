@@ -8,6 +8,7 @@
       "log": "Log"
     },
     "buttons": {
+      "setup_emulator": "Configurar Emulador",
       "kill_bluestacks": "Encerrar BlueStacks",
       "configure_bluestacks": "Configurar BlueStacks",
       "start_bluestacks": "Iniciar BlueStacks",
@@ -16,6 +17,7 @@
       "screenshot": "Capturar Tela",
       "init_game": "Inicializar Jogo",
       "center_view": "Centralizar Visualização",
+      "go_home": "Voltar para Home",
       "delete_army": "Deletar Exército",
       "create_army": "Criar Exército",
       "train_army": "Treinar Exército",

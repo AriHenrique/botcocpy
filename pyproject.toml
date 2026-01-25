@@ -15,7 +15,22 @@ pywin32 = "^311"
 
 [tool.poetry.group.dev.dependencies]
 pyinstaller = "^6.0.0"
+ruff = "^0.14.14"
+black = "^26.1.0"
+pytest = "^9.0.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

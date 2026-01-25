@@ -8,6 +8,7 @@
       "log": "Log"
     },
     "buttons": {
+      "setup_emulator": "Setup Emulator",
       "kill_bluestacks": "Kill BlueStacks",
       "configure_bluestacks": "Configure BlueStacks",
       "start_bluestacks": "Start BlueStacks",
@@ -16,6 +17,7 @@
       "screenshot": "Screenshot",
       "init_game": "Init Game",
       "center_view": "Center View",
+      "go_home": "Go Home",
       "delete_army": "Delete Army",
       "create_army": "Create Army",
       "train_army": "Train Army",
